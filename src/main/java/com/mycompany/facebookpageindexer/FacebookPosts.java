@@ -35,8 +35,6 @@ public class FacebookPosts {
     public static final String MY_APP_ID = "@@@@";
     public static final String MY_APP_SECRET = "@@@@";
     
-    
-
     public List<FbPost> getPosts(String pageId) {
         long unixTime = 0;
         
@@ -49,9 +47,6 @@ public class FacebookPosts {
             } catch (ParseException ex) {
            // Logger.getLogger(CollectPosts.class.getName()).log(Level.SEVERE, null, ex);
         }
-            
-            
-           
             
             Connection<Post> pages = facebookClient.fetchConnection(pageId.trim() + "posts", Post.class, Parameter.with("limit", 50), Parameter.with("since", "1514764800"), Parameter.with("until", unixTime));
             List<FbPost> fbPosts = new ArrayList<>();
@@ -75,9 +70,6 @@ public class FacebookPosts {
                 }
             }
             
-         
-        
-        
            return fbPosts;
     }
 
@@ -86,5 +78,4 @@ public class FacebookPosts {
         cp.getPosts("airtelbuzz");
 
     }
-
 }
