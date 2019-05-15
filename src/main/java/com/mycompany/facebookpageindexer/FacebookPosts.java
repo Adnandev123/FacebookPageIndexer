@@ -31,9 +31,9 @@ public class FacebookPosts {
 
     FacebookClient facebookClient = new DefaultFacebookClient(MY_ACCESS_TOKEN, Version.VERSION_2_5);
 
-    public static final String MY_ACCESS_TOKEN = "552577975108472|Kc26j-f_rJcQ-K_ZY53fSfqu3os";
-    public static final String MY_APP_ID = "552577975108472";
-    public static final String MY_APP_SECRET = "258320d59e95a26bbd2fc02bb0cbd611";
+    public static final String MY_ACCESS_TOKEN = "@@@@";
+    public static final String MY_APP_ID = "@@@@";
+    public static final String MY_APP_SECRET = "@@@@";
     
     
 
